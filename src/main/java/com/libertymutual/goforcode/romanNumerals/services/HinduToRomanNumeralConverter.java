@@ -2,15 +2,14 @@ package com.libertymutual.goforcode.romanNumerals.services;
 
 
 public class HinduToRomanNumeralConverter {
-	
-	String romanNumeral;	
+	String romanNumeral;
 	
 	public HinduToRomanNumeralConverter() {
+		this.romanNumeral="";
 	}
 
 	
 	public String convert(int numberToConvert) {
-		int newNumber;
 		int m = 1000;
 		int cm = 900;
 		int d = 500;
@@ -23,85 +22,85 @@ public class HinduToRomanNumeralConverter {
 		int ix = 9;
 		int v = 5;
 		int iv = 4;
-		int i = 1;
+//		int i = 1;
+		int doAgain;
 	
-		newNumber = numberToConvert / m;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / m;
+		for (int j = 0; j < doAgain; j += 1) {
 		romanNumeral = romanNumeral + "M"; 
 		} 
-		newNumber = newNumber % m; 
+		numberToConvert = numberToConvert % m; 
 	
-		newNumber = numberToConvert / cm;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / cm;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "CM"; 
 		} 
-		newNumber = newNumber % cm;
+		numberToConvert = numberToConvert % cm;
 	
-		newNumber = numberToConvert / d;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / d;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "D"; 
 		} 
-		newNumber = newNumber % d;	
+		numberToConvert = numberToConvert % d;	
 		
-		newNumber = numberToConvert / cd;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / cd;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "CD"; 
 		} 
-		newNumber = newNumber % cd;
+		numberToConvert = numberToConvert % cd;
 	
-		newNumber = numberToConvert / c;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / c;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "C"; 
 		} 
-		newNumber = newNumber % c;
+		numberToConvert = numberToConvert % c;
 
-		newNumber = numberToConvert / xc;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / xc;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "XC"; 
 		} 
-		newNumber = newNumber % xc;
+		numberToConvert = numberToConvert % xc;
 		
-		newNumber = numberToConvert / l;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / l;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "L"; 
 		} 
-		newNumber = newNumber % l;
+		numberToConvert = numberToConvert % l;
 		
-		newNumber = numberToConvert / xl;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / xl;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "XL"; 
 		} 
-		newNumber = newNumber % xl;
+		numberToConvert = numberToConvert % xl;
 		
-		newNumber = numberToConvert / x;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / x;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "X"; 
 		} 
-		newNumber = newNumber % x;
+		numberToConvert = numberToConvert % x;
 		
-		newNumber = numberToConvert / ix;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / ix;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "IX"; 
 		} 
-		newNumber = newNumber % ix;
+		numberToConvert = numberToConvert % ix;
 		
-		newNumber = numberToConvert / v;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / v;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "V"; 
 		} 
-		newNumber = newNumber % v;
+		numberToConvert = numberToConvert % v;
 		
-		newNumber = numberToConvert / iv;
-		for (int j = 0; j < newNumber; j += 0) {
+		doAgain = numberToConvert / iv;
+		for (int j = 0; j < doAgain; j += 1) {
 			romanNumeral = romanNumeral + "IV"; 
 		} 
-		newNumber = newNumber % iv;
+		numberToConvert = numberToConvert % iv;
 		
-		newNumber = numberToConvert / i;
-		for (int j = 0; j < newNumber; j += 0) {
-			romanNumeral = romanNumeral + "I"; 
+		doAgain = numberToConvert;
+		for (int j = 0; j < doAgain; j += 1) {
+			romanNumeral = romanNumeral + "I";
 		} 
-		newNumber = newNumber % i;
 		return romanNumeral;
 	} 
 }
